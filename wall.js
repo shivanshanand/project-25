@@ -1,13 +1,13 @@
 class wall{
     constructor(x,y,b,c){
-        this.body1=Bodies.rectangle(x,y,b,c, {isStatic:true});
+        this.body1=Bodies.rectangle(x,y-38,b,c, {isStatic:true});
         World.add(world,this.body1);
-        this.image=loadImage("dust.jpg");
-        
-        this.body2=Bodies.rectangle(x,y,b,c, {isStatic:true});
+        this.image=loadImage("dust.jpg")
+
+        this.body2=Bodies.rectangle(x-40,y-40,10,70, {isStatic:true});
         World.add(world,this.body2);
-        
-        this.body3=Bodies.rectangle(x,y,b,c, {isStatic:true});
+
+        this.body3=Bodies.rectangle(x+40,y+40,10,70, {isStatic:true});
         World.add(world,this.body3);
 
         this.width=b
@@ -15,11 +15,13 @@ class wall{
     }
 
     show(){
-       push()
+       // rect(this.body2.position.x,this.body2.position.x,10,70);
+       // rect(this.body3.position.x,this.body3.position.x,10,70);
+
+        push()
         translate(this.body1.position.x,this.body1.position.y);
-        rotate(this.body1.angle);
         imageMode(CENTER);
-        image( this.image, 0,0, this.width, this.height ) ;
+        image( this.image, 0,0,60,80 ) ;
         pop()
     }
   }
