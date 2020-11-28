@@ -15,8 +15,11 @@ class wall{
     }
 
     show(){
-        fill("red")
-        rectMode(CENTER);
-        rect( this.body.position.x , this.body.position.y, this.width, this.height ) ;
+       push()
+        translate(this.body1.position.x,this.body1.position.y);
+        rotate(this.body1.angle);
+        imageMode(CENTER);
+        image( this.image, 0,0, this.width, this.height ) ;
+        pop()
     }
   }
