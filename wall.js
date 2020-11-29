@@ -4,10 +4,10 @@ class wall{
         World.add(world,this.body1);
         this.image=loadImage("dust.jpg")
 
-        this.body2=Bodies.rectangle(x-40,y-40,10,70, {isStatic:true});
+        this.body2=Bodies.rectangle(x-50,y-50,10,70, {isStatic:true});
         World.add(world,this.body2);
 
-        this.body3=Bodies.rectangle(x+40,y+40,10,70, {isStatic:true});
+        this.body3=Bodies.rectangle(x+50,y+50,10,70, {isStatic:true});
         World.add(world,this.body3);
 
         this.width=b
