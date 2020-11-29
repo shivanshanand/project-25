@@ -2,7 +2,7 @@ class wall{
     constructor(x,y,b,c){
         this.body1=Bodies.rectangle(x,y-38,b,c, {isStatic:true});
         World.add(world,this.body1);
-        this.image=loadImage("dust.jpg")
+        this.image=loadImage("dustbingreen.png")
 
         this.body2=Bodies.rectangle(x-50,y-50,10,70, {isStatic:true});
         World.add(world,this.body2);
