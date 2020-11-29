@@ -17,7 +17,7 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper1=new paper(100,50,70);
+	paper1=new paper(100,50,55);
 	wall1=new wall(740,375,170,20);
 	wall2=new wall(660,375,20,10);
 	wall3=new wall(820,375,20,10);
