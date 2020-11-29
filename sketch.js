@@ -18,9 +18,9 @@ function setup() {
 
 	//Create the Bodies Here.
 	paper1=new paper(100,50,67);
-	wall1=new wall(740,370,170,20);
-	wall2=new wall(650,370,20,10);
-	wall3=new wall(820,370,20,10);
+	wall1=new wall(740,375,170,20);
+	wall2=new wall(660,375,20,10);
+	wall3=new wall(820,375,20,10);
 	ground1=new ground(600,380,1200,10);
 }
 
