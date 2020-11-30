@@ -15,8 +15,8 @@ class wall{
     }
 
     show(){
-       // rect(this.body2.position.x,this.body2.position.x,10,70);
-       // rect(this.body3.position.x,this.body3.position.x,10,70);
+        rect(this.body2.position.x,this.body2.position.x,10,70);
+        rect(this.body3.position.x,this.body3.position.x,10,70);
 
         push()
         translate(this.body1.position.x,this.body1.position.y);
