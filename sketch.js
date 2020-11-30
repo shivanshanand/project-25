@@ -17,11 +17,11 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper1=new paper(100,50,55);
-	wall1=new wall(740,375,170,20);
-	wall2=new wall(660,375,20,10);
-	wall3=new wall(820,375,20,10);
-	ground1=new ground(600,380,1200,10);
+	paper1=new paper(100,50,30);
+	wall1=new wall(740,383,170,20);
+	wall2=new wall(670,375,20,7);
+	wall3=new wall(820,375,20,7);
+	ground1=new ground(600,390,1200,10);
 }
 
 function draw() {
@@ -37,7 +37,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:150,y:-270});
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:30,y:-50});
 	}
 }
 
